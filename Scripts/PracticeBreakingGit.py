@@ -15,7 +15,7 @@ data=pl.read_csv("Data/IOTA_GLORIA_full_run_exports_28-Jul-2025_first1000Lines.c
 # (as it's only the firsst 1000 lines it represents the trade of wheat in 2005 for consuming regions "Rest of Americas", 
 # "Rest of Europe", "Rest of Africa", "Rest of Asia-Pacific", "Afghanistan", "Angola", "Albania" only)
 # Potential to create a merge conflict here if all of us choose a different region to filter by
-region="Rest of Asia-Pacific"
+region="Rest of Americas"
 
 # select production in consumption and deforestation data only
 data=data.select(["year", "FAO_commodity_name", "FAO_producing_country_name", "GLORIA_region_name", 
@@ -31,6 +31,8 @@ fig, ax=plt.subplots(figsize=(10,6))
 ax.scatter(data["production_embedded_in_consumption__tonnes"], data["def_risk_embedded_in_consumption_amoritized_ha"],
            color="blue", marker="x")
 ax.set_xlabel("Production in consumption (megatonnes)")
+           color="orange", marker="x")
+ax.set_xlabel("Jo's x label: Deforestation (ha)")
 ax.set_ylabel("Deforestation in consumption (ha)")
 #ax.set_title("Deforestation (ha) against production in consumption (tonnes)")
 plt.savefig("Visualisations/simple_prod_deforestation_graph_"+region+".png")
