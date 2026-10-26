@@ -32,3 +32,5 @@ ax.set_ylabel("Deforestation in consumption (ha)")
 plt.savefig("Visualisations/simple_prod_deforestation_graph_"+region+".png")
 
 print("Done")
+
+print("I know i'm done, but i'm going to say it again; Done!")
