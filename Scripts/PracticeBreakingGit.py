@@ -34,7 +34,6 @@ ax.set_xlabel("Production in consumption (megatonnes)")
            color="orange", marker="x")
 ax.set_xlabel("Jo's x label: Deforestation (ha)")
 ax.set_ylabel("Deforestation in consumption (ha)")
-#ax.set_title("Deforestation (ha) against production in consumption (tonnes)")
 plt.savefig("Visualisations/simple_prod_deforestation_graph_"+region+".png")
 
 # THIS IS MY RANDOM COMMENT TO CREATE A MERGE CONFLICT
