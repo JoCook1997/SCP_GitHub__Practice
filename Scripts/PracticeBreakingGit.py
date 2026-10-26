@@ -29,6 +29,7 @@ ax.scatter(data["production_embedded_in_consumption__tonnes"], data["def_risk_em
            color="black", marker="x")
 ax.set_xlabel("Production in consumption (tonnes)")
 ax.set_ylabel("Deforestation in consumption (ha)")
+#ax.set_title("Deforestation (ha) against production in consumption (tonnes)")
 plt.savefig("Visualisations/simple_prod_deforestation_graph_"+region+".png")
 
 print("Done")
