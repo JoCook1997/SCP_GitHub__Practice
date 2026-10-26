@@ -26,7 +26,7 @@ data=data.filter(pl.col("GLORIA_region_name")==region)
 # Several opportunities for merge conflicts here by changing the axis titles, figsize, colours etc.
 fig, ax=plt.subplots(figsize=(10,6))
 ax.scatter(data["production_embedded_in_consumption__tonnes"], data["def_risk_embedded_in_consumption_amoritized_ha"],
-           color="orange", marker="x")
+           color="black", marker="x")
 ax.set_xlabel("Production in consumption (tonnes)")
 ax.set_ylabel("Deforestation in consumption (ha)")
 plt.savefig("Visualisations/simple_prod_deforestation_graph_"+region+".png")
