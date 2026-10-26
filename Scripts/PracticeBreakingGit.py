@@ -1,7 +1,7 @@
 # Practice python script for the SCP team to use to create a mrege conflict and try to resolve it
 # Jo Cook
 # date created: 22/10/2026
-# last edited: 22/10/2026
+# last edited: 26/10/2026
 
 
 # load libraries
@@ -26,7 +26,7 @@ data=data.filter(pl.col("GLORIA_region_name")==region)
 # Several opportunities for merge conflicts here by changing the axis titles, figsize, colours etc.
 fig, ax=plt.subplots(figsize=(10,6))
 ax.scatter(data["production_embedded_in_consumption__tonnes"], data["def_risk_embedded_in_consumption_amoritized_ha"],
-           color="black", marker="x")
+           color="orange", marker="x")
 ax.set_xlabel("Production in consumption (tonnes)")
 ax.set_ylabel("Deforestation in consumption (ha)")
 #ax.set_title("Deforestation (ha) against production in consumption (tonnes)")
