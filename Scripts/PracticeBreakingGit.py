@@ -1,7 +1,7 @@
 # Practice python script for the SCP team to use to create a mrege conflict and try to resolve it
 # Jo Cook
 # date created: 22/10/2026
-# last edited: 26/10/2026
+# last edited: 22/10/2026
 
 
 # load libraries
