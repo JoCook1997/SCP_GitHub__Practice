@@ -16,10 +16,10 @@ data=data.select(["year", "FAO_commodity_name", "FAO_producing_country_name", "G
                   "production_embedded_in_consumption__tonnes", "def_risk_embedded_in_consumption_amoritized_ha"])
 
 # filter the data
-# (as it's only the first 1000 lines it represents the trade of wheat in 2005 for consuming regions "Rest of Americas", 
+# (as it's only the firsst 1000 lines it represents the trade of wheat in 2005 for consuming regions "Rest of Americas", 
 # "Rest of Europe", "Rest of Africa", "Rest of Asia-Pacific", "Afghanistan", "Angola", "Albania" only)
 # Potential to create a merge conflict here if all of us choose a different region to filter by
-region="Afghanistan"
+region="Angola"
 data=data.filter(pl.col("GLORIA_region_name")==region)
 
 # make a plot of production in consumption against deforestation risk
